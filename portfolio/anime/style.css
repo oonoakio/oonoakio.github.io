@@ -1,0 +1,418 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body{
+  background: linear-gradient(#d5fbff, #3fb6da);
+  font-family: 'Chango', cursive;
+}
+
+
+#tori1, #tori2, #tori3{
+  z-index: auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 366px;
+  background-size: cover;
+  background: url("images/tori1.png") no-repeat, url("images/tori2.png") no-repeat, url("images/tori3.png") no-repeat;
+  -webkit-animation: swing 15s linear;
+  -moz-animation: swing 15s linear;
+  -ms-animation: swing 15s linear;
+  -o-animation: swing 15s linear;
+  animation: swing 15s linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes swing {
+  0% {background-position: 2000px 0, 2000px 0, 2000px 0;}
+  10% {background-position: 1770px 50px, 1770px -45px, 1770px 70px;}
+  20% {background-position: 1540px 0, 1540px 0, 1540px 30px;}
+  30% {background-position: 1310px 50px, 1310px -55px, 1310px 50px;}
+  40% {background-position: 1080px 0, 1080px 0, 1080px 10px;}
+  50% {background-position: 850px 50px, 850px -25px, 850px 30px;}
+  60% {background-position: 620px 0, 620px 0, 620px 20px;}
+  70% {background-position: 390px 50px, 390px -25px, 390px 60px;}
+  80% {background-position: 160px 0, 160px 0, 160px 30px;}
+  90% {background-position: -70px 50px, -70px -35px, -70px 60px;}
+  100% {background-position: -300px 0, -300px 0, -300px 0; }
+}
+
+@-moz-keyframes swing {
+  0% {background-position: 2000px 0, 2000px 0, 2000px 0;}
+  10% {background-position: 1770px 50px, 1770px -45px, 1770px 70px;}
+  20% {background-position: 1540px 0, 1540px 0, 1540px 30px;}
+  30% {background-position: 1310px 50px, 1310px -55px, 1310px 50px;}
+  40% {background-position: 1080px 0, 1080px 0, 1080px 10px;}
+  50% {background-position: 850px 50px, 850px -25px, 850px 30px;}
+  60% {background-position: 620px 0, 620px 0, 620px 20px;}
+  70% {background-position: 390px 50px, 390px -25px, 390px 60px;}
+  80% {background-position: 160px 0, 160px 0, 160px 30px;}
+  90% {background-position: -70px 50px, -70px -35px, -70px 60px;}
+  100% {background-position: -300px 0, -300px 0, -300px 0; }
+}
+
+@-ms-keyframes swing {
+  0% {background-position: 2000px 0, 2000px 0, 2000px 0;}
+  10% {background-position: 1770px 50px, 1770px -45px, 1770px 70px;}
+  20% {background-position: 1540px 0, 1540px 0, 1540px 30px;}
+  30% {background-position: 1310px 50px, 1310px -55px, 1310px 50px;}
+  40% {background-position: 1080px 0, 1080px 0, 1080px 10px;}
+  50% {background-position: 850px 50px, 850px -25px, 850px 30px;}
+  60% {background-position: 620px 0, 620px 0, 620px 20px;}
+  70% {background-position: 390px 50px, 390px -25px, 390px 60px;}
+  80% {background-position: 160px 0, 160px 0, 160px 30px;}
+  90% {background-position: -70px 50px, -70px -35px, -70px 60px;}
+  100% {background-position: -300px 0, -300px 0, -300px 0; }
+}
+
+@-o-keyframes swing {
+  0% {background-position: 2000px 0, 2000px 0, 2000px 0;}
+  10% {background-position: 1770px 50px, 1770px -45px, 1770px 70px;}
+  20% {background-position: 1540px 0, 1540px 0, 1540px 30px;}
+  30% {background-position: 1310px 50px, 1310px -55px, 1310px 50px;}
+  40% {background-position: 1080px 0, 1080px 0, 1080px 10px;}
+  50% {background-position: 850px 50px, 850px -25px, 850px 30px;}
+  60% {background-position: 620px 0, 620px 0, 620px 20px;}
+  70% {background-position: 390px 50px, 390px -25px, 390px 60px;}
+  80% {background-position: 160px 0, 160px 0, 160px 30px;}
+  90% {background-position: -70px 50px, -70px -35px, -70px 60px;}
+  100% {background-position: -300px 0, -300px 0, -300px 0; }
+}
+
+@keyframes swing {
+  0% {background-position: 2000px 0, 2000px 0, 2000px 0;}
+  10% {background-position: 1770px 50px, 1770px -45px, 1770px 70px;}
+  20% {background-position: 1540px 0, 1540px 0, 1540px 30px;}
+  30% {background-position: 1310px 50px, 1310px -55px, 1310px 50px;}
+  40% {background-position: 1080px 0, 1080px 0, 1080px 10px;}
+  50% {background-position: 850px 50px, 850px -25px, 850px 30px;}
+  60% {background-position: 620px 0, 620px 0, 620px 20px;}
+  70% {background-position: 390px 50px, 390px -25px, 390px 60px;}
+  80% {background-position: 160px 0, 160px 0, 160px 30px;}
+  90% {background-position: -70px 50px, -70px -35px, -70px 60px;}
+  100% {background-position: -300px 0, -300px 0, -300px 0; }
+}
+
+
+#fuwafuwa{
+  position: absolute;
+  margin-top: -100px;
+  left: 100px;
+  width: 725px;
+  height: 352px;
+  background-size: cover;
+  background: url("images/kumo1.png") no-repeat, url("images/kumo2.png") no-repeat;
+  -webkit-animation: cloudMove 6s infinite;
+  -moz-animation: cloudMove 6s infinite;
+  -ms-animation: cloudMove 6s infinite;
+  -o-animation: cloudMove 6s infinite;
+  animation: cloudMove 6s infinite;
+}
+
+@-webkit-keyframes cloudMove {
+  0% {background-position: 0 0, 0 0;}
+  50% {background-position: 40px 0, 80px 0;}
+  100% {background-position: 0 0, 0 0;}
+}
+
+@-moz-keyframes cloudMove {
+  0% {background-position: 0 0, 0 0;}
+  50% {background-position: 40px 0, 80px 0;}
+  100% {background-position: 0 0, 0 0;}
+}
+
+@-ms-keyframes cloudMove {
+  0% {background-position: 0 0, 0 0;}
+  50% {background-position: 40px 0, 80px 0;}
+  100% {background-position: 0 0, 0 0;}
+}
+
+@-o-keyframes cloudMove {
+  0% {background-position: 0 0, 0 0;}
+  50% {background-position: 40px 0, 80px 0;}
+  100% {background-position: 0 0, 0 0;}
+}
+
+@keyframes cloudMove {
+  0% {background-position: 0 0, 0 0;}
+  50% {background-position: 40px 0px, -30px 0px;}
+  100% {background-position: 0 0, 0 0;}
+}
+
+#pikapika{
+  width: 415px;
+  height: 384px;
+  position: absolute;
+  top: 0;
+  left: 980px;
+  background-size: cover;
+  background: url("images/ohisama.png") no-repeat;
+    -webkit-animation: spin 30s linear infinite;
+    -moz-animation: spin 30s linear infinite;
+    -ms-animation: spin 30s linear infinite;
+    -o-animation: spin 30s linear infinite;
+    animation: spin 30s linear infinite;}
+
+
+@-webkit-keyframes spin {
+  0% {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+  0% {-moz-transform: rotate(0deg);}
+  100% {-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes spin {
+  0% {-ms-transform: rotate(0deg);}
+  100% {-ms-transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+  0% {-o-transform: rotate(0deg);}
+  100% {-o-transform: rotate(360deg);}
+}
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+#sika{
+  position: absolute;
+  top: 695px;
+  left: 720px;
+}
+
+
+#sika>.kage{
+  position: absolute;
+  bottom: 0;
+}
+
+#sika>.butu{
+  position: absolute;
+  bottom: 0;
+}
+
+#kabu{
+  position: absolute;
+  top: 620px;
+  left: 140px;
+}
+
+#kabu>.butu{
+  position: absolute;
+}
+
+#kanban{
+  position: absolute;
+  top: 700px;
+  left: 30px;
+}
+
+#kanban>.butu{
+  position: absolute;
+}
+
+#risu{
+  position: absolute;
+  top: 820px;
+  left: 520px;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: bottom center;
+  -webkit-animation-name: purupuru;
+}
+
+@-webkit-keyframes purupuru {
+  0%{
+    -webkit-transform: scale(1, 1);
+    }
+  48%{
+    -webkit-transform: scale(1, 1);
+    }
+  50%{
+    -webkit-transform: scale(1.1, 0.9);
+    }
+  53%{
+    -webkit-transform: scale(0.9, 1.1);
+    }
+  57%{
+    -webkit-transform: scale(1, 1);
+    }
+  59%{
+    -webkit-transform: scale(1, 1);
+    }
+  100% {
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+#risu>.kage{
+  position: absolute;
+  bottom: 0;
+}
+
+#risu>.butu{
+  position: absolute;
+  bottom: 0;
+}
+
+#tanuki{
+  position: absolute;
+  top: 870px;
+  left: 1050px;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: bottom center;
+  -webkit-animation-name: jump;
+}
+
+@-webkit-keyframes jump {
+  0%{
+    -webkit-transform: scale(1, 1);
+    }
+  48%{
+    -webkit-transform: scale(1, 1);
+    }
+  50%{
+    -webkit-transform: scale(1.1, 0.9);
+    }
+  53%{
+    -webkit-transform: scale(0.9, 1.1) translate(0, -50px);
+    }
+  57%{
+    -webkit-transform: scale(1, 1) translate(0, -3px);
+    }
+  59%{
+    -webkit-transform: scale(1, 1) translate(0, 0px);
+    }
+  100% {
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+#tanuki>.kage{
+  position: absolute;
+  bottom: 0;
+}
+
+#tanuki>.butu{
+  position: absolute;
+  bottom: 0;
+}
+
+
+#usagi{
+  position: absolute;
+  top: 870px;
+  left: 300px;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: bottom center;
+  -webkit-animation-name: jump;
+}
+
+@-webkit-keyframes jump {
+  0%{
+    -webkit-transform: scale(1, 1);
+    }
+  48%{
+    -webkit-transform: scale(1, 1);
+    }
+  49%{
+    -webkit-transform: scale(1.1, 0.9);
+    }
+  52%{
+    -webkit-transform: scale(0.9, 1.1) translate(0, -70px);
+    }
+  56%{
+    -webkit-transform: scale(1, 1) translate(0, -3px);
+    }
+  58%{
+    -webkit-transform: scale(1, 1) translate(0, 0px);
+    }
+  100% {
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+#usagi>.kage{
+  position: absolute;
+  bottom: 0;
+}
+
+#usagi>.butu{
+  position: absolute;
+  bottom: 0;
+}
+
+.navi{
+  position: absolute;
+  top: 570px;
+  left: 150px;
+}
+
+.navi ul{
+  list-style: none;
+}
+
+.navi li{
+  float: left;
+  font-size: 30px;
+}
+
+.navi li>a{
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+.ski{
+  margin-left: 120px;
+}
+
+.hob{
+  margin-left: 140px;
+}
+
+.dre{
+  margin-left: 118px;
+}
+
+.con{
+  margin-left: 100px;
+}
+
+#bg{
+  background: url("images/bg_kusa.png") no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+  width: 1600px;
+  height: 800px;
+}
+
+.title{
+  position: absolute;
+  top: 330px;
+  left: 180px;
+}
+
+.title h1{
+  color: #fff;
+  font-size: 95px;
+  letter-spacing: 11px;
+  text-shadow: 0 0 8px #000;
+}
+
+.title h3{
+  color: #fff;
+  float: right;
+  letter-spacing: 11px;
+  text-shadow: 0 0 8px #000;
+  margin-top: -2px;
+}
+
