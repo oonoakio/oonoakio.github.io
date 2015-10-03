@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>SIMPLE</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!--[if lt IE 9]>
+          <script src="http://css3-mediaqueries-js.googlecode.com/
+          svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- font-awesome -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/csshake.css">
+        <link href='https://fonts.googleapis.com/css?family=Geo' rel='stylesheet' type='text/css'>
+        <script src="js/jquery-2.1.4.js"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/Chart.js"></script>
+        <script src="js/wow.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+                 <!--ウィンドウ幅に合わせて可変-->
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <!--スマホ用トグルボタンの設置-->
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+
+                            <!--ロゴ表示の指定-->
+                            <a class="navbar-brand" href="index.html">SIMPLE</a>
+                        </div>
+
+                        <!--スマホ用の画面幅が小さいときの表示を非表示にする-->
+                        <div id="navbar" class="navbar-collapse collapse">
+
+                            <ul class="nav navbar-nav navbar-right">
+                            <li><a href="pro_dre.html#profile">Profile</a></li>
+                            <li><a href="pro_dre.html#skill">Skill</a></li>
+                            <li><a href="pro_dre.html#hobby">Hobby</a></li>
+                            <li><a href="pro_dre.html#dream">Dream</a></li>
+                            <li><a href="pro_dre.html#portfolio">Portfolio</a></li>
+                            <li><a href="pro_dre.html#comment">Comment</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            </ul>
+
+                        </div><!--/.nav-collapse -->
+                    </div><!--/.container-fluid -->
+                </nav>
+            </div>
+        </div>
+
+        <div class="wow">
+            <div id="contact">
+                <div class="container">
+                    <div class="wow rotateInDownLeft">
+                        <h1><i class="fa fa-cube"></i><span class="big">C</span>ontact</h1>
+                    </div>
+                    <div class="wow bounceIn">
+                        <h3>なんでもご連絡ください。人との繋がり大切にしていきます。</h3>
+                    </div>
+                    <form class="form-horizontal" action="akiotaberu@gmail.com" method="post" role="form" >
+                        <!-- 名前 -->
+                        <label class="control-label">お名前</label>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input type="text" name="name" class="form-control for" placeholder="名前入れてね" required>
+                            </div>
+                        </div>
+                        <!-- メール -->
+                        <label class="control-label">メール</label>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input type="email" name="email" class="form-control for" placeholder="メールアドレスいれてね" required>
+                            </div>
+                        </div>
+
+                        <!-- メッセージ -->
+                        <label class="control-label">メッセージ</label>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <textarea class="form-control for" name="comment" rows="5"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- button -->
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <button type ="submit" class="btn btn-default">送信する</button>
+                                <button type ="reset" class="btn btn-default">リセット</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script>new WOW().init();</script>
+    </body>
+</html>

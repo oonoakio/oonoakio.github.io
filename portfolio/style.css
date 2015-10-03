@@ -1,0 +1,354 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body{
+  font-family: 'Geo', sans-serif;
+  margin: 0 auto;
+  background-color: #32323c;
+}
+
+#main{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: url("images/img1.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+
+#main h1{
+  text-align: center;
+  color: #f0f0f0;
+  letter-spacing: 15px;
+  font-size: 200px;
+  margin-top: 160px;
+}
+
+#main h1:before {
+  content:'';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: rgba(200,0,0,0.2);
+  transition: all 3s ease;
+}
+
+#main h1:hover:before {
+  width: 100%;
+}
+
+#main h3{
+  text-align: center;
+  color: #f0f0f0;
+  font-size: 40px;
+  letter-spacing: 15px;
+  margin-top: -20px;
+}
+
+#main h3:before {
+  content:'';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: rgba(0,200,0,0.2);
+  transition: all 3s ease;
+}
+
+#main h3:hover:before {
+  width: 100%;
+}
+
+#main .sen{
+  padding: 10px 0;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+#main .sen:before {
+  content:'';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: rgba(0,0,200,0.2);
+  transition: all 3s ease;
+}
+
+#main .sen:hover:before {
+  width: 100%;
+}
+
+#main ul{
+  margin-top: 80px;
+  text-align: center;
+  padding-left: 0px;
+}
+
+#main li{
+  font-size: 25px;
+  display: inline;
+  margin: 10px;
+  padding:  0 10px;
+}
+
+#main a{
+  text-decoration: none;
+}
+
+#main a:link { color: #f0f0f0; }
+#main a:visited { color: #f0f0f0; }
+#main a:hover { color: #f0f0f0; }
+#main a:active { color: #f0f0f0; }
+
+
+
+/* etc */
+
+#header{
+  width: 100%;
+  height: 100%;
+}
+
+.big{
+  font-size: 50px;
+}
+
+#profile{
+  width: 100%;
+  height: 100%;
+  background: url("images/bc.png") center center;
+  margin-top: 50px;
+  padding: 50px 0;
+}
+
+#profile h1, #profile h4, #profile p{
+  color: #32323c;
+}
+
+#profile video{
+  border: solid 1px #32323c;
+  background-color: #32323c;
+  padding: 10px;
+}
+
+#skill{
+  width: 100%;
+  height: 100%;
+  background: url("images/bc2.png") center center;
+  padding: 50px 0;
+}
+
+#skill h1, #skill h3, #skill h4, #skill p{
+  color: #f0f0f0;
+}
+
+#skill canvas{
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+}
+
+#skill img{
+  position: absolute;
+  top: 78px;
+  width: 45px;
+  margin: 0 41%;
+}
+
+#hobby{
+  width: 100%;
+  height: 100%;
+  background: url("images/bc.png") center center;
+  padding: 50px 0;
+}
+
+#hobby h1, #hobby h3, #hobby p{
+  color: #32323c;
+}
+
+
+#hobby img{
+  max-width: 100%;
+  padding: 20px;
+}
+
+#dream{
+  width: 100%;
+  height: 100%;
+  background: url("images/bc2.png") center center;
+  padding: 50px 0;
+}
+
+#dream img{
+  width: 100%;
+}
+
+#dream h1, #dream h3, #dream p, #dream li{
+  color: #f0f0f0;
+}
+
+#portfolio{
+  width: 100%;
+  height: 100%;
+  background: url("images/bc.png") center center;
+  padding: 50px 0;
+}
+
+#portfolio h1, #portfolio h4, #portfolio p{
+  color: #32323c;
+}
+
+#comment{
+  width: 100%;
+  height: 100%;
+  background: url("images/bc2.png") center center;
+  padding: 50px 0;
+}
+
+#comment h1, #comment h3, #comment p{
+  color: #f0f0f0;
+}
+
+
+/* contact */
+
+#contact{
+  margin-top: 70px;
+}
+
+#contact h1{
+  color: #f0f0f0;
+  font-size: 30px;
+}
+
+#contact h3{
+  color: #f0f0f0;
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+#contact .sen{
+  padding: 10px 0;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+#contact ul{
+  margin-top: 80px;
+  text-align: center;
+  padding-left: 0px;
+}
+
+#contact li{
+  font-size: 25px;
+  display: inline;
+  margin: 10px;
+  padding:  0 10px;
+}
+
+#contact a{
+  text-decoration: none;
+}
+
+#contact a:link { color: #f0f0f0; }
+#contact a:visited { color: #f0f0f0; }
+#contact a:hover { color: #f0f0f0; }
+#contact a:active { color: #f0f0f0; }
+
+#contact label{
+  color: #f0f0f0;
+}
+
+
+#contact .btn{
+  background-color: #32323c;
+  color: #f0f0f0;
+}
+
+#contact .for{
+  background-color: #f0f0f0;
+  color: #32323c;
+}
+
+#contact .btn:hover {
+  background-color: #f0f0f0;
+  color: #32323c;
+}
+
+
+/* タブレット */
+@media(max-width:1200px) {
+
+  #skill img{
+    top: 68px;
+    width: 35px;
+    margin: 0 42%;
+  }
+
+  #hobby img{
+    max-width: 100%;
+    padding: 0;
+    margin-top: 70px;
+  }
+
+}
+
+@media(max-width:992px) {
+
+  #skill img{
+    top: 97px;
+    width: 65px;
+    margin: 0 39%;
+  }
+
+  #hobby img{
+    max-width: 100%;
+    padding: 0;
+    margin-top: 100px;
+  }
+
+}
+
+@media(max-width:768px) {
+
+  #main h1{
+    text-align: center;
+    color: #f0f0f0;
+    letter-spacing: 0;
+    font-size: 90px;
+  }
+
+  #main h3{
+    text-align: center;
+    color: #f0f0f0;
+    font-size: 30px;
+    letter-spacing: 0;
+    margin-top: -20px;
+  }
+
+  #main li{
+    font-size: 20px;
+    display: inline;
+    margin: 0 5px;
+    padding: 0 5px;
+  }
+
+
+  #skill canvas{
+    width: 80%;
+    height: 80%;
+    margin: 20px;
+  }
+
+  #skill img{
+    margin-left: 0;
+    position: static;
+    width: 20%;
+  }
+
+}

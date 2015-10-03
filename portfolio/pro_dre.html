@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>SIMPLE</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!--[if lt IE 9]>
+          <script src="http://css3-mediaqueries-js.googlecode.com/
+          svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- font-awesome -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/csshake.css">
+        <link href='https://fonts.googleapis.com/css?family=Geo' rel='stylesheet' type='text/css'>
+        <script src="js/jquery-2.1.4.js"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/Chart.js"></script>
+        <script src="js/wow.js"></script>
+    </head>
+    <body>
+
+        <div id="header">
+            <div class="container">
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+                 <!--ウィンドウ幅に合わせて可変-->
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <!--スマホ用トグルボタンの設置-->
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+
+                            <!--ロゴ表示の指定-->
+                            <a class="navbar-brand" href="index.html">SIMPLE</a>
+                        </div>
+
+                        <!--スマホ用の画面幅が小さいときの表示を非表示にする-->
+                        <div id="navbar" class="navbar-collapse collapse">
+
+                            <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#profile">Profile</a></li>
+                            <li><a href="#skill">Skill</a></li>
+                            <li><a href="#hobby">Hobby</a></li>
+                            <li><a href="#dream">Dream</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#comment">Comment</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            </ul>
+
+                        </div><!--/.nav-collapse -->
+                    </div><!--/.container-fluid -->
+                </nav>
+            </div>
+        </div>
+
+        <div class="wow">
+            <div id="profile">
+                <div class="container">
+                    <div class="wow rotateInDownLeft">
+                        <h1><i class="fa fa-cube"></i> <span class="big">P</span>rofile</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="wow bounceIn">
+                                <p>大野明生</p>
+                                <h4>AKIO OONO</h4>
+                                <h4>1984.6.17</h4>
+                                <p>生まれも育ちも東京都。ＷＥＢ業界に現在転身するため猛勉強中。営業・映像編集・ＤＴＰオペレーターの職業を経てＷＥＢ業界に進出。『気は優しくて力持ち』と金太郎のような人間を目指しています。初のポートフォリオ作成だったので、自分の好きなようにやりたいことしてます。是非他のところも見ていってくれたらうれしいです。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="wow fadeIn">
+                                <video controls width="100%" height="100%">
+                                <source src="test.mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="skill">
+                <div class="container">
+                    <div class="wow rotateInDownLeft">
+                        <h1><i class="fa fa-cube"></i> <span class="big">S</span>kill</h1>
+                    </div>
+                    <div class="wow bounceInRight">
+                        <h3>Adobe</h3>
+                    </div>
+                    <div class="row">
+                        <div class="wow bounceInLeft">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                <img src="images/img_ai.png" alt="">
+                                <canvas id="canvas" height="100%" width="100%"></canvas>
+                                <script>
+                                var doughnutData = [
+                                    {
+                                    value: 70,
+                                    color:"#f0f0f0"
+                                    },
+                                    {
+                                    value: 30,
+                                    color: "#32323c"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("canvas").
+                                getContext("2d")).Doughnut(doughnutData);
+                                </script>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                <img src="images/img_ps.png" alt="">
+                                <canvas id="canvas2" height="100%" width="100%"></canvas>
+                                <script>
+                                var doughnutData = [
+                                    {
+                                    value: 80,
+                                    color:"#f0f0f0"
+                                    },
+                                    {
+                                    value: 20,
+                                    color: "#32323c"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("canvas2").
+                                getContext("2d")).Doughnut(doughnutData);
+                                </script>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                <img src="images/img_id.png" alt="">
+                                <canvas id="canvas3" height="100%" width="100%"></canvas>
+                                <script>
+                                var doughnutData = [
+                                    {
+                                    value: 85,
+                                    color:"#f0f0f0"
+                                    },
+                                    {
+                                    value: 15,
+                                    color: "#32323c"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("canvas3").
+                                getContext("2d")).Doughnut(doughnutData);
+                                </script>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                <img src="images/img_pr.png" alt="">
+                                <canvas id="canvas4" height="100%" width="100%"></canvas>
+                                <script>
+                                var doughnutData = [
+                                    {
+                                    value: 75,
+                                    color:"#f0f0f0"
+                                    },
+                                    {
+                                    value: 25,
+                                    color: "#32323c"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("canvas4").
+                                getContext("2d")).Doughnut(doughnutData);
+                                </script>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                <img src="images/img_ae.png" alt="">
+                                <canvas id="canvas5" height="100%" width="100%"></canvas>
+                                <script>
+                                var doughnutData = [
+                                    {
+                                    value: 65,
+                                    color:"#f0f0f0"
+                                    },
+                                    {
+                                    value: 35,
+                                    color: "#32323c"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("canvas5").
+                                getContext("2d")).Doughnut(doughnutData);
+                                </script>
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear" style="clear: both"></div>
+
+                    <div class="wow bounceInRight">
+                        <h3>Programing</h3>
+                    </div>
+                    <div class="row">
+                        <div class="wow bounceInLeft">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                <img src="images/img_html.png" alt="">
+                                <canvas id="pro" height="100%" width="100%"></canvas>
+                                <script>
+                                var doughnutData = [
+                                    {
+                                    value: 75,
+                                    color:"#f0f0f0"
+                                    },
+                                    {
+                                    value: 25,
+                                    color: "#32323c"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("pro").
+                                getContext("2d")).Doughnut(doughnutData);
+                                </script>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                <img src="images/img_css.png" alt="">
+                                <canvas id="pro2" height="100%" width="100%"></canvas>
+                                <script>
+                                var doughnutData = [
+                                    {
+                                    value: 70,
+                                    color:"#f0f0f0"
+                                    },
+                                    {
+                                    value: 30,
+                                    color: "#32323c"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("pro2").
+                                getContext("2d")).Doughnut(doughnutData);
+                                </script>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                <img src="images/img_bo.png" alt="">
+                                <canvas id="pro3" height="100%" width="100%"></canvas>
+                                <script>
+                                var doughnutData = [
+                                    {
+                                    value: 60,
+                                    color:"#f0f0f0"
+                                    },
+                                    {
+                                    value: 40,
+                                    color: "#32323c"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("pro3").
+                                getContext("2d")).Doughnut(doughnutData);
+                                </script>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                <img src="images/img_php.png" alt="">
+                                <canvas id="pro4" height="100%" width="100%"></canvas>
+                                <script>
+                                var doughnutData = [
+                                    {
+                                    value: 40,
+                                    color:"#f0f0f0"
+                                    },
+                                    {
+                                    value: 60,
+                                    color: "#32323c"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("pro4").
+                                getContext("2d")).Doughnut(doughnutData);
+                                </script>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                <img src="images/img_wor.png" alt="">
+                                <canvas id="pro5" height="100%" width="100%"></canvas>
+                                <script>
+                                var doughnutData = [
+                                    {
+                                    value: 65,
+                                    color:"#f0f0f0"
+                                    },
+                                    {
+                                    value: 35,
+                                    color: "#32323c"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("pro5").
+                                getContext("2d")).Doughnut(doughnutData);
+                                </script>
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear" style="clear: both"></div>
+                    <div class="wow bounceInRight">
+                        <h3>studying now</h3>
+                    </div>
+                    <div class="wow bounceIn">
+                        <h4>JavaScript / MYSQL / etc.</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hobby">
+                <div class="container">
+                    <div class="wow rotateInDownLeft">
+                        <h1><i class="fa fa-cube"></i><span class="big">H</span>obby</h1>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="wow bounceInLeft">
+                            <img src="images/img_man.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="wow bounceIn" style="text-align:center">
+                            <h3>バスケットボール</h3>
+                            <p>最近はめっきりやってない…バスケがしたい…</p>
+                            <h3>ダーツ</h3>
+                            <p>まだまだ初心者</p>
+                            <h3>映画鑑賞</h3>
+                            <p>好きな映画はクールランニング</p>
+                            <h3>動画編集</h3>
+                            <p>いい思い出になるもの創りたい</p>
+                            <h3>人と遊ぶこと</h3>
+                            <p>出かけるときは一人は寂しい</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="wow bounceInRight">
+                            <img src="images/img_vi.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dream">
+                <div class="container">
+                    <div class="wow rotateInDownLeft">
+                        <h1><i class="fa fa-cube"></i><span class="big">D</span>ream</h1>
+                    </div>
+                    <div class="wow bounceIn">
+                        <div class="col-sm-6 col-md-6">
+                            <ul>
+                                <li>1st<br>フロントエンドの能力を高め、バックエンドの能力を得る</li>
+                                <li>2nd<br>フリーランスとして独立をする</li>
+                                <li>3td<br>庭付き一軒家を買う［バスケットゴール有り］</li>
+                                <li>4th<br>欲しい物は迷わず買える経済力</li>
+                                <li>5th<br>パン屋さんになる</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="wow fadeIn">
+                            <img src="images/img3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio">
+            <div class="container">
+                <div class="wow rotateInDownLeft">
+                    <h1><i class="fa fa-cube"></i><span class="big">P</span>ortfolio</h1>
+                </div>
+                <div class="wow bounceIn">
+                    <p>まだまだ作品がありませんが随時更新していきます。</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="comment">
+            <div class="container">
+                <div class="wow rotateInDownLeft">
+                    <h1><i class="fa fa-cube"></i><span class="big">C</span>omment</h1>
+                </div>
+                <div class="wow bounceIn">
+                    <p>映像編集の仕事をした影響か動きのあるＷＥＢサイトにしましたが、まだ簡単な動きしか実装してませんが、これからレベルを上げてもっとガチャガチャ動き回るポートフォリオにしていきたいと思います。</p>
+                    <p>動きが有る分デザインはシンプルに色味はあまり使わずにタイトル同様にシンプルにまとめました。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script>new WOW().init();</script>
+    </body>
+</html>
